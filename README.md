@@ -136,7 +136,7 @@ Now, let's create a declarative pipeline in Jenkins:
       version: "3.3"
       services:
         web:
-          image: gerardbulky/segula-pipeline:latest
+          image: gerardbulky/segula-image:latest
           ports:
             - "5000:5000"
      ```
