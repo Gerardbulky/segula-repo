@@ -155,7 +155,7 @@ To achieve full automation, I will configure webhooks so that any changes pushed
  - Update your code on your repository and see it update on the server.
 ### Step 7: Further simplify our pipeline with "Pipeline Scripts from SCM"
 To make your pipeline more effective and easier to modify, you can use "Pipeline Script from SCM." This approach allows you to provide a GitHub repository link containing the Jenkinsfile. By adopting this method, any developer in your team with proper permissions can review and modify the Jenkinsfile.
-   - In your repository create a ```jenkinsfile``` and paste the scripts
+   - In your repository create a ```Jenkinsfile``` and paste the scripts
    - In the Jenkins dashboard select ```Pipeline script from SCM```, Put the ```repository URL``` and ```Credential``` and the ```branch```. <br>
    
    By leveraging webhooks and the "Pipeline Script from SCM" approach, your team can work collaboratively on the Jenkinsfile and make changes with ease, eliminating the need to access the Jenkins dashboard. 
