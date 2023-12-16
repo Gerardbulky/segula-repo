@@ -3,19 +3,19 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/")
 def index():
-    Dict = {"color": 25, "fruit": 56, "pet": 86}
+    # Dict = {"color": 25, "fruit": 56, "pet": 86}
 
-    if request.method == 'POST':
-        sum = 0
-        name = request.form.get('name')
+    # if request.method == 'POST':
+    #     sum = 0
+    #     name = request.form.get('name')
 
-        for value in Dict.values():
-            if name in Dict.keys():
-                sum += value
-                return render_template("index.html", sum=sum, name=name)
-            pass
+    #     for value in Dict.values():
+    #         if name in Dict.keys():
+    #             sum += value
+    #             return render_template("index.html", sum=sum, name=name)
+    #         pass
     return render_template("index.html")
 
 if __name__ == "__main__":
