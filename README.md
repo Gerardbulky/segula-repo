@@ -22,7 +22,7 @@ Jenkins is a popular open source CI/CD tool. It is used to build and test your p
   - Check if there are any ``` docker images ``` and if there's any
   - Build a docker Image using ``` docker build -t segula-image . ```
   - Check if Image exist ``` docker images ```
-  - Check if Image is running ``` docker ps ```
+  - Check if Image is running ``` docker ps -a ```
   - Run Image ``` docker run -d -p 5000:5000 segula-image ```
   - Stop image ``` docker stop container-id ```
 ### Step 3: Update the Server vis SSH
@@ -79,7 +79,7 @@ Now, let's create a declarative pipeline in Jenkins:
    Set the name to "Segula-app"
 3. Enable the "Build Triggers" option by ticking the box next to "GitHub hook trigger for GITScm pooling".
 4. In the "Pipeline" section, choose "Pipeline Script" and add the following script:
-                   pipeline{
+        pipeline{
         	agent any
         	environment {
         		DOCKERHUB_CREDENTIALS=credentials('segulaHub')
