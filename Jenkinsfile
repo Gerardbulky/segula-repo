@@ -17,7 +17,7 @@ pipeline{
  		}
  	    stage('gitclone') {
  			steps {
- 				git url: "https://github.com/Gerardbulk/segula-repo.git", branch: "main"
+ 				git url: "https://github.com/Gerardbulky/segula-repo.git", branch: "main"
  			}
  		}
  		stage('Build') {
