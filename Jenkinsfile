@@ -22,7 +22,7 @@ pipeline{
  		}
  		stage('Build') {
  			steps {
- 				sh 'docker build -t bossmanjerry/segula-image:latest .'
+ 				s 'docker build -t bossmanjerry/segula-image:latest .'
  			}
  		}
  		stage('Login') {
