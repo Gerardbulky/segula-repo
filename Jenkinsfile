@@ -17,12 +17,12 @@ pipeline{
  		}
  	    stage('gitclone') {
  			steps {
- 				git url: "https://github.com/Gerardbulky/segula-repo.git", branch: "main"
+ 				git url: "https://github.com/Gerardbulk/segula-repo.git", branch: "main"
  			}
  		}
  		stage('Build') {
  			steps {
- 				sh 'docker build -t bosmanjerry/segula-image:latest .'
+ 				sh 'docker build -t bossmanjerry/segula-image:latest .'
  			}
  		}
  		stage('Login') {
